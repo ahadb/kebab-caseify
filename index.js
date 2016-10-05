@@ -5,7 +5,7 @@
 
 const regex = /\s+/g;
 
-module.exports = exports = function kebabify(str) {
+module.exports = exports = function kebabCaseify(str) {
 	if (!str || 0 === str.length) {
 		throw new TypeError('I expected a string');
 	}
