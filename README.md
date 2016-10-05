@@ -25,13 +25,32 @@ kebabCaseify('Quux Bar');
 kebabCaseify('Quux Foo Bar');
 //==> 'quux-foo-bar'
 kebabCaseify('foo Bar quux');
-==> 'foo-bar-quux'
+//==> 'foo-bar-quux'
 kebabCaseify('Bar FOO norf');
+//==> 'bar-foo-norf'
+
+/**
+ * additonaly use with capitalize
+ * @param {String} str
+ */
+ 
+kebabCaseify.capitalize('foo Baz bar')); 
+//==> 'FOO-BAZ-BAR'
+
+/**
+ * additonaly use with EN Dash
+ * @param {String} str
+ */
+ 
+kebabCaseify.enDash('EN dash ME')); 
+//==> 'en–dash–me'
 ```
 
 ##TODO
 
----
+* add more tests
+* add capability to kebabcase a camelCased string
+* chain methods together
 
 ##Tests
 
